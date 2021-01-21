@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/drewdunning21/.config/coc/extensions/coc-java-data/jdt_ws_add7edb47a93056b062d6f4028fed7b0/.metadata/.plugins/org.eclipse.jdt.core
+3842426239.index
