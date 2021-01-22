@@ -118,7 +118,7 @@ alias tmuxt='sh ~/.tmux/scripts/template'
 alias bybit='cd ~/Projects/personal/vim-trading;python3 ~/Projects/personal/vim-trading/main.py'
 alias apt='sudo apt'
 alias class='python3 ~/Projects/personal/scripts/auto-zoom/main.py'
-# \!+XBsc=8\!a+NK\\&pL
 
 # alias lectfile='sshpass -p Wuq#j4OD ssh amd10@lectura.cs.arizona.edu "sshpass -p $PASS2 scp ./nvim.appimage amd10@lectura.arizona.cs.edu:/nvim.appimage"'
 # sshpass -p Wuq#j4OD scp amd10@lectura.cs.arizona.edu:
+
