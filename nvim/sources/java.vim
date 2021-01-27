@@ -12,13 +12,23 @@ nnoremap <leader><C-R> :call RunJava()<CR>
 
 function! RunJavaFX()
     let fileName = expand('%:t')
-    execute 'javac --module-path /usr/local/javafx-sdk-11.0.2/lib --add-modules javafx.controls ' . fileName
+    execute ':!javac --module-path /usr/local/javafx-sdk-11.0.2/lib --add-modules javafx.controls ' . fileName
     let rootName = expand('%:t:r')
-    execute ':java --module-path /usr/local/javafx-sdk-11.0.2/lib --add-modules javafx.controls ' . rootName
+    execute ':!java --module-path /usr/local/javafx-sdk-11.0.2/lib --add-modules javafx.controls ' . rootName
     execute ':!rm *.class'
 endfunction
 
 nnoremap <leader><C-F> :call RunJavaFX()<CR>
+
+function! RunC()
+    let fileName = expand('%:t')
+    let rootName = expand('%:t:r')
+    execute ':!gcc ' . fileName . ' -Wall -o ' . rootName
+    execute ':!./' . rootName
+    execute ':!rm ' . rootName
+endfunction
+
+nnoremap <leader><C-N> :call RunC()<CR>
 
 " function! RunMips()
 "     let fileName = expand('%:t')
