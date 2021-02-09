@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/drewdunning21/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -123,4 +123,3 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 
 # alias lectfile='sshpass -p Wuq#j4OD ssh amd10@lectura.cs.arizona.edu "sshpass -p $PASS2 scp ./nvim.appimage amd10@lectura.arizona.cs.edu:/nvim.appimage"'
 # sshpass -p Wuq#j4OD scp amd10@lectura.cs.arizona.edu:
-
