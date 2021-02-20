@@ -21,11 +21,12 @@ endfunction
 nnoremap <leader><C-F> :call RunJavaFX()<CR>
 
 function! RunC()
-    let fileName = expand('%:t')
-    let rootName = expand('%:t:r')
-    execute ':!gcc ' . fileName . ' -Wall -o ' . rootName
-    execute ':!./' . rootName
-    execute ':!rm ' . rootName
+    " let fileName = expand('%:t')
+    " let rootName = expand('%:t:r')
+    " execute ':!gcc ' . fileName . ' -Wall -o ' . rootName
+    " execute ':!./' . rootName
+    " execute ':!rm ' . rootName
+    execute ':!sh ~/run.sh'
 endfunction
 
 nnoremap <leader><C-N> :call RunC()<CR>

@@ -120,6 +120,9 @@ alias bybit='cd ~/Projects/personal/vim-trading;python3 ~/Projects/personal/vim-
 alias class='python3 ~/Projects/personal/scripts/auto-zoom/main.py'
 alias run='~/run.sh'
 alias update='sudo apt-get update && sudo apt-get upgrade'
+alias qt='~/qute.sh'
+alias bw='~/AppImages/bw'
+alias runp='python3 ~/runTests.py'
 
 # alias lectfile='sshpass -p Wuq#j4OD ssh amd10@lectura.cs.arizona.edu "sshpass -p $PASS2 scp ./nvim.appimage amd10@lectura.arizona.cs.edu:/nvim.appimage"'
 # sshpass -p Wuq#j4OD scp amd10@lectura.cs.arizona.edu:

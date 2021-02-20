@@ -219,4 +219,7 @@ bindsym $mod+b exec playerctl previous
 
 exec_always --no-startup-id sh ~/.config/polybar/launch.sh
 
+# qute browser
+bindsym $mod+l exec ~/qute.sh
+
 for_window [class="^.*"] border pixel 1
