@@ -43,4 +43,8 @@ return require('packer').startup(function()
 
     use "akinsho/toggleterm.nvim"
 
+    use "beeender/Comrade"
+
+    use {'Shougo/deoplete.nvim', cmp = ':UpdateRemotePlugins'}
+
 end)
