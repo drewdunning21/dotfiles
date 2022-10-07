@@ -17,6 +17,9 @@ return require('packer').startup(function()
     use 'williamboman/nvim-lsp-installer'
     use { 'autozimu/LanguageClient-neovim', branch = 'next', cmd = 'bash install.sh' }
     use {'nvim-treesitter/nvim-treesitter'}
+
+    use 'nvim-treesitter/nvim-treesitter-context'
+
     use 'ray-x/lsp_signature.nvim'
     -- vim telescope
     use 'nvim-telescope/telescope.nvim'
@@ -43,8 +46,8 @@ return require('packer').startup(function()
 
     use "akinsho/toggleterm.nvim"
 
-    use "beeender/Comrade"
+    -- use "beeender/Comrade"
 
-    use {'Shougo/deoplete.nvim', cmp = ':UpdateRemotePlugins'}
+    -- use {'Shougo/deoplete.nvim', cmp = ':UpdateRemotePlugins'}
 
 end)
