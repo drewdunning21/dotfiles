@@ -1,6 +1,6 @@
 require 'options'
 require 'treesitter'
-require 'lsp'
+-- require 'lsp'
 require 'statusline'
 require 'remaps'
 require 'colemak'
