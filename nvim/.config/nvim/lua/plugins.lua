@@ -42,5 +42,5 @@ return require('packer').startup(function()
     use { 'mhartington/formatter.nvim' }
 
     use "akinsho/toggleterm.nvim"
-
+    use "lukas-reineke/indent-blankline.nvim"
 end)

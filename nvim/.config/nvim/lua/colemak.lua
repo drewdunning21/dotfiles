@@ -12,7 +12,7 @@ vim.keymap.set('n', 'l', 's', {noremap = true})
 
 vim.keymap.set('v', 'n', 'j', {noremap = true})
 vim.keymap.set('v', 'e', 'k', {noremap = true})
-vim.keymap.set('v', 'i', 'l', {noremap = true})
+-- vim.keymap.set('v', 'i', 'l', {noremap = true})
 vim.keymap.set('v', 'm', 'h', {noremap = true})
 vim.keymap.set('v', 's', 'i', {noremap = true})
 vim.keymap.set('v', 'j', 'e', {noremap = true})
