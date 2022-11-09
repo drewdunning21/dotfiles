@@ -3,6 +3,9 @@
 # Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
 #### END FIG ENV VARIABLES ####
+ZSH_THEME="robbyrussell"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.jenv/bin:$PATH"
 export EDITOR='nvim' 
 eval "$(jenv init -)"
