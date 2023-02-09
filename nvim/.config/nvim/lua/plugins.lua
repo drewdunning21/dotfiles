@@ -1,22 +1,32 @@
- -- This file can be loaded by calling `lua require('plugins')` from your init.vim
+-- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-cmdline'
-    use 'hrsh7th/nvim-cmp'
-    use 'hrsh7th/cmp-vsnip'
-    use 'hrsh7th/vim-vsnip'
-    use 'L3MON4D3/LuaSnip'
-    use 'williamboman/nvim-lsp-installer'
-    use { 'autozimu/LanguageClient-neovim', branch = 'next', cmd = 'bash install.sh' }
-    use {'nvim-treesitter/nvim-treesitter'}
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
+        requires = {
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
+
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'saadparwaiz1/cmp_luasnip'},
+            {'hrsh7th/cmp-nvim-lua'},
+
+            -- Snippets
+            {'L3MON4D3/LuaSnip'},
+            {'rafamadriz/friendly-snippets'},
+        }
+    }    use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
     use 'nvim-treesitter/nvim-treesitter-context'
 
@@ -32,20 +42,17 @@ return require('packer').startup(function()
     use 'tpope/vim-fugitive'
     -- lua - i think i need this but not 100% sure what for
     use 'tbastos/vim-lua'
-    use({
-            "olimorris/onedarkpro.nvim",
-            config = function()
-                require("onedarkpro").setup()
-            end
-        })
+    use "olimorris/onedarkpro.nvim"
+    -- use 'mhartington/oceanic-next'
     use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     use { 'mhartington/formatter.nvim' }
 
     use "akinsho/toggleterm.nvim"
     use "lukas-reineke/indent-blankline.nvim"
+    use "mbbill/undotree"
 
     -- use "beeender/Comrade"
 

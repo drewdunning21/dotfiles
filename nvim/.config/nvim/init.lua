@@ -7,5 +7,6 @@ require 'colemak'
 require 'plugins'
 require 'color'
 require 'telescope'
+require 'undotree'
 -- require 'rust'
 -- require'nvim-web-devicons'.get_icon(filename, extension, options)

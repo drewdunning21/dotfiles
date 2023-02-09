@@ -11,6 +11,7 @@ export EDITOR='nvim'
 eval "$(jenv init -)"
 
 alias auth="kinit && mwinit -o -s"
+alias build="pip3 install ~/projects/sports-betting/"
 
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the end of this file.
